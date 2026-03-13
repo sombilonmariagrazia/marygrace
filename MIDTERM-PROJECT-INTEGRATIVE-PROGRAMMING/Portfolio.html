@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="Images/logo.png" type="png">
+    <link rel="stylesheet" href="style.css" />
+    <title>DaMary's Team</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Images/logo.png" alt="DaMary's Logo" class="logo-img">
+        <span>DaMary's</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#Portfolio" class="active">Portfolio</a></li>
+        <li><a href="Favorites.html">Favorites</a></li>
+        <li><a href="#" onclick="self.close()">Close</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="portfolio-hero" id="home">
+  
+  <!-- Video Background -->
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="Images/videobg.mp4" type="video/mp4">
+  </video>
+  
+  <div class="video-overlay"></div>
+  
+  <!-- Game Modal ON TOP of video -->
+  <div id="game-option" class="option">
+    <div class="section-header">
+    <h2>Our <span class="highlight">Portfolio</span></h2>
+      <div class="underline"></div>
+    </div>
+    <div class="game-container">
+      <img src="Images/function.jpg" alt="function pic">
+      <h1>Function Integration</h1>
+      <div class="game-title">
+        <h2>Pick your choice:</h2>
+      </div>
+      <div class="menu">
+        <div class="menu-grid">
+          <div class="menu-content">
+            <button onclick="tempConverter()">Temperature Converter</button>
+          </div>
+          <div class="menu-content">
+            <button onclick="longerWord()">The Longer Word</button>
+          </div>
+          <div class="menu-content">
+            <button onclick="showBirthStone()">Know my Birthstone</button>
+          </div>
+          <div class="menu-content">
+            <button onclick="arithmetic()">Basic Operations</button>
+          </div>
+          <div class="menu-content">
+            <button onclick="computeAcceleration()">Compute for Acceleration</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 DaMary's Team | "Dream in code. Build in reality."</p>
+  <a href="#">Back to Top</a>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

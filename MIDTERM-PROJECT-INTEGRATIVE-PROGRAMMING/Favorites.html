@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="Images/logo.png" type="png">
+  <link rel="stylesheet" href="style.css">
+  <title>Favorites</title>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Images/logo.png" alt="DaMary's Logo" class="logo-img">
+        <span>DaMary's</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="#Favorites" class="active">Favorites</a></li>
+        <li><a href="#">Close</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- VIDEO BACKGROUND -->
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="Images/videobg.mp4" type="video/mp4">
+  </video>
+
+  <!-- CARDS CONTAINER -->
+  <div class="fav-wrapper">
+    <div class="fav-header">
+      <h2>Our <span class="highlight">Favorites</span></h2>
+      <div class="underline"></div>
+    </div>
+
+    <div class="container">
+      <!-- CARD 1 -->
+      <div class="card">
+        <div class="artwork">
+          <img src="Images/image1.jpg" class="art-img">
+          <p class="quote">"Don't just use technology - create it." <br>"Dream in code. Build in reality."</p>
+        </div>
+        <div class="comments-section">
+          <p>Comment Section</p>
+          <ul class="comments-list"></ul>
+          <div class="comment-input-row">
+            <div class="heart1" onclick="toggleLike(this)">
+              <img src="Images/heart.png" class="tosmall">
+            </div>
+            <input type="text" class="comment-input" placeholder="Write a comment...">
+            <button onclick="addComment(this)">Post</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card">
+        <div class="artwork">
+          <img src="Images/image2.jpg" class="art-img">
+          <p class="quote">"Connected minds, shaping a digital world."</p>
+        </div>
+        <div class="comments-section">
+          <p>Comment Section</p>
+          <ul class="comments-list"></ul>
+          <div class="comment-input-row">
+            <div class="heart1" onclick="toggleLike(this)">
+              <img src="Images/heart.png" class="tosmall">
+            </div>
+            <input type="text" class="comment-input" placeholder="Write a comment...">
+            <button onclick="addComment(this)">Post</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card">
+        <div class="artwork">
+          <img src="Images/image3.jpg" class="art-img">
+          <p class="quote">"Where human wisdom meets machine intelligence."</p>
+        </div>
+        <div class="comments-section">
+          <p>Comment Section</p>
+          <ul class="comments-list"></ul>
+          <div class="comment-input-row">
+            <div class="heart1" onclick="toggleLike(this)">
+              <img src="Images/heart.png" class="tosmall">
+            </div>
+            <input type="text" class="comment-input" placeholder="Write a comment...">
+            <button onclick="addComment(this)">Post</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="card">
+        <div class="artwork">
+          <img src="Images/image4.jpg" class="art-img">
+          <p class="quote">"Touch the future, program the present."</p>
+        </div>
+        <div class="comments-section">
+          <p>Comment Section</p>
+          <ul class="comments-list"></ul>
+          <div class="comment-input-row">
+            <div class="heart1" onclick="toggleLike(this)">
+              <img src="Images/heart.png" class="tosmall">
+            </div>
+            <input type="text" class="comment-input" placeholder="Write a comment...">
+            <button onclick="addComment(this)">Post</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="card">
+        <div class="artwork">
+          <img src="Images/image5.jpg" class="art-img">
+          <p class="quote">"Security is strength, protection is peace."</p>
+        </div>
+        <div class="comments-section">
+          <p>Comment Section</p>
+          <ul class="comments-list"></ul>
+          <div class="comment-input-row">
+            <div class="heart1" onclick="toggleLike(this)">
+              <img src="Images/heart.png" class="tosmall">
+            </div>
+            <input type="text" class="comment-input" placeholder="Write a comment...">
+            <button onclick="addComment(this)">Post</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 DaMary's Team | "Dream in code. Build in reality."</p>
+    <a href="#">Back to Top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

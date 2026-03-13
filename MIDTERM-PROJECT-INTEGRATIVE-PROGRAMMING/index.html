@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DaMary's Team</title>
+  <link rel="icon" href="Images/logo.png" type="png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Images/logo.png" alt="DaMary's Logo" class="logo-img">
+        <span>DaMary's</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#index" class="active">Home</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="Favorites.html">Favorites</a></li>
+        <li><a href="#" onclick="self.close()">Close</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="hero-left">
+        <span class="pre-title">— PC223 · Integrative Programming & Technologies</span>
+        <h1>Hi, we're <span class="highlight">DaMary's</span></h1>
+        <p class="team-names">
+          Mary Rose Abregana · Mary Grace Sombilon · Daiseree Carzano
+        </p>
+        <p>
+          From PC223 classmates to a creative team,
+          we blend design thinking with technical skill
+          to bring ideas to life, one project at a time.
+        </p>
+        <p class="tagline">"Three minds. One vision."</p>
+        
+        <button class="about-btn"
+          onclick="document.querySelector('.profiles').scrollIntoView({behavior:'smooth'})">
+          About Us →
+        </button>
+
+      </div>
+
+      <div class="hero-right">
+        <img src="Images/logo.png" alt="Team Logo" class="active">
+        <img src="Images/rose1.png" alt="Team Photo 1" >
+        <img src="Images/grace.jpg" alt="Team Photo 2">
+        <img src="Images/daisy.jpg" alt="Team Photo 3">
+      </div>
+
+    </div>
+
+    <div class="carousel-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+  </section>
+
+  <!-- PROFILES SECTION -->
+  <section class="profiles">
+    <div class="section-header">
+      <h2>Our <span class="highlight">Team</span></h2>
+      <div class="underline"></div>
+    </div>
+
+    <div class="profile-container">
+
+      <div class="profile-card">
+        <div class="img-wrapper">
+          <img src="Images/rose1.png" alt="Mary Rose">
+        </div>
+        <h3>Mary Rose Abregana</h3>
+        <p class="role">BSIT Student | Makes it work</p>
+        <p class="member-bio">Enjoys solving logical problems and developing practical solutions through programming.</p>
+        <div class="card-footer">
+          <span class="badge">Developer</span>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <div class="img-wrapper">
+          <img src="Images/grace.jpg" alt="Mary Grace">
+        </div>
+        <h3>Mary Grace Sombilon</h3>
+        <p class="role">BSIT Student | UI/UX Designer</p>
+        <p class="member-bio">Focused on designing simple, engaging, and meaningful digital experiences.</p>
+        <div class="card-footer">
+          <span class="badge">Designer</span>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <div class="img-wrapper">
+          <img src="Images/daisy.jpg" alt="Daiseree">
+        </div>
+        <h3>Daiseree Carzano</h3>
+        <p class="role">BSIT Student | UI/UX Designer</p>
+        <p class="member-bio">Passionate about building visually appealing and user-friendly websites.</p>
+        <div class="card-footer">
+          <span class="badge">Frontend</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 DaMary's Team | "Dream in code. Build in reality."</p>
+    <a href="#">Back to Top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
